@@ -2,7 +2,7 @@
 
 This folder contains codes needed to fit models to experimental data and remake figures from the manuscript:
 
-H. Vo et al, Analysis and design of single-cell experiments to harvest fluctuation information while rejecting measurement noise, 2023.
+H. Vo et al, Analysis and design of single-cell experiments to harvest fluctuation information while rejecting measurement noise, BioRxiv, 2023, https://www.biorxiv.org/content/10.1101/2021.05.11.443611v4
 
 To run these codes, you will need the following:
 1. MATLAB R2021b or later (earlier releases have not been tested).
