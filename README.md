@@ -1,6 +1,6 @@
 # Fitting and Experiment Design for HIV Reporter using MCP-GFP or smiFISH Labels
 
-This folder contains codes needed to fit models to experimental data and remake figures from the manuscript:
+This repository contains all codes needed to fit models to experimental data and remake figures from the manuscript:
 
 H. Vo et al, Analysis and design of single-cell experiments to harvest fluctuation information while rejecting measurement noise, BioRxiv, 2023, https://www.biorxiv.org/content/10.1101/2021.05.11.443611v4
 
