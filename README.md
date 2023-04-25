@@ -19,10 +19,9 @@ The main folder of this repository contains three scripts of interest.  For each
 
 "PlottingResults.m" provides commands to make the final figures for the paper, plus additional analyses that were left out of the original manuscript, but which might be of interest to some readers.
 
-
 # Ongoing Efforts
 
-A broader array of model generation and fitting tools (including graphical interface) is under development. A current version can be accessed at: https://github.com/MunskyGroup/SSIT
+A broader array of model generation and fitting tools (including graphical interface) is under continual development. The current version can be accessed at: https://github.com/MunskyGroup/SSIT
 
 # Questions?
 
