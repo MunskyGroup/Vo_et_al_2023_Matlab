@@ -1,5 +1,4 @@
 %% Vo_et_al_FittingExperimentalData.m
-clear all
 addpath('subroutines')
 addpath('src')
 TMP = SSIT(); clear TMP; % Load definition of the SSIT class for later use.

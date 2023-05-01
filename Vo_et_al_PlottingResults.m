@@ -5,7 +5,6 @@
 
 %% Preliminary Setup to select model and specifiy setting used in the fitting.
 close all
-clear all
 addpath('subroutines')
 addpath('src')
 TMP = SSIT(); clear TMP % Load definition of the SSIT class for later use.
