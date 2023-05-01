@@ -24,7 +24,7 @@ Model.fspOptions.bounds = [0 0 0 0 3 3 3 1200]; % Initial bounds for FSP solutio
 [FSPsoln,Model.fspOptions.bounds] = Model.solve; % Solve FSP.
 
 %% Load and Assign Experimental Data to Variables
-Model = Model.loadData('Huy_intensity_data_correct/NucAndSpotClassification_dTS_2.csv',{'x4','nucIntens3'});
+Model = Model.loadData(['Huy_intensity_data_correct',filesep,'NucAndSpotClassification_dTS_2.csv'],{'x4','nucIntens3'});
 
 %% Create PDO (e.g., for FISH intensity)
 Model.pdoOptions.type = 'DiscretizedNormal';

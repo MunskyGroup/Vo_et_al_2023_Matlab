@@ -5,7 +5,7 @@ addpath('src')
 TMP = SSIT(); clear TMP; % Load definition of the SSIT class for later use.
 
 %% Set Variables to Control Fit
-fileStr = 'Parameter_Fit_Files/NewParameterSet'; % name for saving the fitting results
+fileStr = ['Parameter_Fit_Files',filesep,'NewParameterSet']; % name for saving the fitting results
 vars.timeSet = [0,300]; % Data to fit (0,18,300) or subset.
 vars.doFit = true; % Set the code to fitting mode. 
 vars.display = 'final'; % Repress iteration in parameter searches.

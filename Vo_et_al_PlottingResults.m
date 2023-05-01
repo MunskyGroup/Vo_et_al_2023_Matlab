@@ -9,7 +9,7 @@ clear all
 addpath('subroutines')
 addpath('src')
 TMP = SSIT(); clear TMP % Load definition of the SSIT class for later use.
-FN = 'Parameter_Fit_Files/FISHTrue_2StateBurst_4Pars_Prior2x';
+FN = ['Parameter_Fit_Files',filesep,'FISHTrue_2StateBurst_4Pars_Prior2x'];
 vars.doFit = 0;
 vars.pdoTimes = [0,300];
 vars.priorScale = 2;
@@ -71,7 +71,7 @@ vars.initialFspBounds = [0 0 0 3 3 1200];
 vars.muLog10Prior=[-4,-4,log10(0.2),log10(0.012)]';
 vars.sigLog10Prior = [1,1,0.5,.5]'*vars.priorScale;
 vars.modelChoice = '2statePoisson';
-FN = 'Parameter_Fit_Files/FISHTrue_3Pars_TwoStatePoisson';
+FN = ['Parameter_Fit_Files',filesep,'FISHTrue_3Pars_TwoStatePoisson'];
 
 close all
 fitResultsSimp = makeFitFigures(vars,[FN,'_0_300']);
