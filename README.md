@@ -9,7 +9,6 @@ To run these codes, you will need the following:
 2. Symbolic Computing Toolbox.
 3. Global Optimization Toolbox.
 4. Parallel Computing Toolbox.
-5. The Matlab Tensor Toolbox, which can be found at https://www.tensortoolbox.org/.  You will need to make sure to add the TTB to the Matlab path before running the provided codes.
 
 The main folder of this repository contains three scripts of interest.  For each, it is recommended that you open these in the matlab editor and run one cell at a time.
 
@@ -18,6 +17,12 @@ The main folder of this repository contains three scripts of interest.  For each
 "FittingExperimentalData.m" provides commands to run all data fitting routines in order to regenerate all results in the manuscript. To complete fits from scratch, you will need to run the different sections multiple times, which may take a couple days of computing depending on your computer speed and number of available CPUs. 
 
 "PlottingResults.m" provides commands to make the final figures for the paper, plus additional analyses that were left out of the original manuscript, but which might be of interest to some readers.
+
+# Acknowledgements
+
+The SSIT tools in this repository make use of sparse tensor the Tensor Toolbox for MATLAB (version 3.2.1) using sparse tensors and provided by Brett W. Bader, Tamara G. Kolda and others at www.tensortoolbox.org.
+
+B. W. Bader and T. G. Kolda, Efficient MATLAB Computations with Sparse and Factored Tensors, SIAM J. Scientific Computing, 30(1):205-231, 2007, http://dx.doi.org/10.1137/060676489. 
 
 # Ongoing Efforts
 
