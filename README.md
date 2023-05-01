@@ -20,13 +20,13 @@ The main folder of this repository contains three scripts of interest.  For each
 
 # Acknowledgements
 
-The SSIT tools in this repository make use of sparse tensor the Tensor Toolbox for MATLAB (version 3.2.1) using sparse tensors and provided by Brett W. Bader, Tamara G. Kolda and others at www.tensortoolbox.org.  Users of this software shoudl cite the TTM creators at:
+The SSIT tools in this repository make use of sparse tensors using the Tensor Toolbox for MATLAB (version 3.2.1) provided by Brett W. Bader, Tamara G. Kolda and others at www.tensortoolbox.org under   Users of this software should cite the TTM creators at:
 
 * B. W. Bader and T. G. Kolda, Efficient MATLAB Computations with Sparse and Factored Tensors, SIAM J. Scientific Computing, 30(1):205-231, 2007, http://dx.doi.org/10.1137/060676489. 
 
-The provided SSIT tools also make use a modified version of Expokit for the solution of time-invariant master equations (although these codes are not usef for the current publication). Users of this software should cite the creators at:
+The provided SSIT tools also make use a modified version of Expokit for the solution of time-invariant master equations (although these codes are not used for the current publication). Users of this software should cite the creators at:
 
-Sidje, R. B.,Expokit, Software Package for Computing Matrix Exponentials, ACM Trans. Math. Softw., 24:1, 1998.
+Sidje, R. B., Expokit Software Package for Computing Matrix Exponentials, ACM Trans. Math. Softw., 24:1, 1998.
 
 # Ongoing Efforts
 
