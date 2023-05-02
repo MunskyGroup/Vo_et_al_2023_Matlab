@@ -26,9 +26,12 @@ Model.fspOptions.bounds = [0 0 0 0 3 3 3 1200]; % Initial bounds for FSP solutio
 %% Load and Assign Experimental Data to Variables
 Model = Model.loadData(['Huy_intensity_data_correct',filesep,'NucAndSpotClassification_dTS_2.csv'],{'x4','nucIntens3'});
 
-%% Create PDO (e.g., for FISH intensity)
-Model.pdoOptions.type = 'DiscretizedNormal';
-Model.pdoOptions.props.PDOpars(13:16) = [1230.44782483253  4344.80945141776  1.80822274571843  100.912164090283];
+%% Create PDO (e.g., for FISH intensity data)
+Model.pdoOptions.type = 'GaussSpurrious';  % Set the PDO to type Gaussian with Spurrious measurements
+% Set PDO parameters -- 7 parameter per species and only the 4th species
+% has non-zero parameters.  Here are the parameters that were fit to the
+% calibration data.
+Model.pdoOptions.props.PDOpars(3*7+1:4*7) = [1225.15968593735 5763.33514930208 1.83194486127572 91.8392775451715 2.18441427191091e-14 797.987351366183 9.1562855790308e-06];
 Model.pdoOptions.props.pdoOutputRange = [0,0,0,2259];
 Model.pdoOptions.PDO = Model.generatePDO(Model.pdoOptions,...
      Model.pdoOptions.props.PDOpars,FSPsoln.fsp,false);
