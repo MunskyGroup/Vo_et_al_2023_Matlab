@@ -12,6 +12,8 @@ To run these codes, you will need the following:
 
 The main folder of this repository contains three scripts of interest.  For each, it is recommended that you open these in the matlab editor and run one cell at a time.
 
+Make sure to change the working directory to the main folder in which this README and the files "exampleModelScript.m", "FittingExperimentalData.m" and "PlottingResults.m" are placed.
+
 "exampleModelScript.m" shows the user how to set up a model, associate experimental data, defie a PDO, run a parameter estimation routine, compute the FIM, and run the Metropolis Hasting search.
 
 "FittingExperimentalData.m" provides commands to run all data fitting routines in order to regenerate all results in the manuscript. To complete fits from scratch, you will need to run the different sections multiple times, which may take a couple days of computing depending on your computer speed and number of available CPUs. 
