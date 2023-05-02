@@ -185,34 +185,34 @@ if max(T_array)>0
 end
 %%
 
-if isempty(fignums)
-    figure
-else
-    figure(fignums(4))
-end
-subplot(3,1,1)
-plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,app.DataLoadingAndFittingTabOutputs.V_LogLk,'linewidth',2)
-hold on
-plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,app.DataLoadingAndFittingTabOutputs.perfectMod,'linewidth',2)
-plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,app.DataLoadingAndFittingTabOutputs.perfectModSmoothed,'linewidth',2)
-ylabel('Log(L(D(t)|M)')
-legend({'log(L) - best fit for model','log(L) - theoretical limit','log(L) - theoretical limit (smoothed)'})
-
-subplot(3,1,2)
-plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,app.DataLoadingAndFittingTabOutputs.numCells,'linewidth',2)
-ylabel('# Cells')
-
-subplot(3,1,3)
-plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,...
-    (app.DataLoadingAndFittingTabOutputs.V_LogLk - app.DataLoadingAndFittingTabOutputs.perfectMod)./...
-    app.DataLoadingAndFittingTabOutputs.numCells,'linewidth',2)
-
-ylabel('\Delta Log(L) / Cell')
-xlabel('Time')
-for i=1:3
-    subplot(3,1,i)
-    set(gca,'fontsize',15);
-end
+% if isempty(fignums)
+%     figure
+% else
+%     figure(fignums(4))
+% end
+% subplot(3,1,1)
+% plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,app.DataLoadingAndFittingTabOutputs.V_LogLk,'linewidth',2)
+% hold on
+% plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,app.DataLoadingAndFittingTabOutputs.perfectMod,'linewidth',2)
+% plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,app.DataLoadingAndFittingTabOutputs.perfectModSmoothed,'linewidth',2)
+% ylabel('Log(L(D(t)|M)')
+% legend({'log(L) - best fit for model','log(L) - theoretical limit','log(L) - theoretical limit (smoothed)'})
+% 
+% subplot(3,1,2)
+% plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,app.DataLoadingAndFittingTabOutputs.numCells,'linewidth',2)
+% ylabel('# Cells')
+% 
+% subplot(3,1,3)
+% plot(app.DataLoadingAndFittingTabOutputs.fittingOptions.fit_times,...
+%     (app.DataLoadingAndFittingTabOutputs.V_LogLk - app.DataLoadingAndFittingTabOutputs.perfectMod)./...
+%     app.DataLoadingAndFittingTabOutputs.numCells,'linewidth',2)
+% 
+% ylabel('\Delta Log(L) / Cell')
+% xlabel('Time')
+% for i=1:3
+%     subplot(3,1,i)
+%     set(gca,'fontsize',15);
+% end
 
 
 end

@@ -236,7 +236,7 @@ for icontourFig = [3,5,9]
 
         f = figure(1000+100*iTime+icontourFig); set(f,'Position',[200*icontourFig    678   338   269])
         set(gca,'XLabel',[],'YLabel',[])
-        legend(legs(icontourFig,:),'Location','southeast')
+        legend(legs(icontourFig,:),'Location','northeast')
         if icontourFig==3
             set(gca,'xlim',[0,500],'ylim',[0,0.012]);
         elseif icontourFig==5

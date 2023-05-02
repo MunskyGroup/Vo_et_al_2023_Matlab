@@ -567,8 +567,8 @@ switch iStep
                 [evecsMH,evalsMH] = eig(covMLE);
                 
 
-                figure(123);
-                subplot(1,5,iPDO);
+%                 figure(123);
+%                 subplot(1,5,iPDO);
 
                 if nargout>=1
                     results.covMLE{iPDO} = covMLE;
@@ -582,17 +582,17 @@ switch iStep
                     results.evalsMH{iPDO} = evalsMH;
                 else
 
-                    for ipar = 1:size(covFIM,1)
-                        errorbar(muPRIOR(ipar),ipar+0.15,covPRIOR(ipar,ipar),'cs','horizontal','LineWidth',3)
-                        hold on
-                        errorbar(log10MLEPars(ipar),ipar-0.15,stdMLE(ipar),'ms','horizontal','LineWidth',3)
-                        errorbar(log10MLEPars(ipar),ipar,sqrt(covFIM(ipar,ipar)),'ks','horizontal','LineWidth',3)
-                        if iPDO==1
-                            parsTotal = log10MLEPars;
-                        end
-                        plot(parsTotal(ipar)*[1,1],ipar+[-0.3,0.3],'k--')
-                    end
-                    set(gca,'ylim',[0,6])
+%                     for ipar = 1:size(covFIM,1)
+%                         errorbar(muPRIOR(ipar),ipar+0.15,covPRIOR(ipar,ipar),'cs','horizontal','LineWidth',3)
+%                         hold on
+%                         errorbar(log10MLEPars(ipar),ipar-0.15,stdMLE(ipar),'ms','horizontal','LineWidth',3)
+%                         errorbar(log10MLEPars(ipar),ipar,sqrt(covFIM(ipar,ipar)),'ks','horizontal','LineWidth',3)
+%                         if iPDO==1
+%                             parsTotal = log10MLEPars;
+%                         end
+%                         plot(parsTotal(ipar)*[1,1],ipar+[-0.3,0.3],'k--')
+%                     end
+%                     set(gca,'ylim',[0,6])
 
                     figure(1+(iPDO-1)*3)
                     plot(valDone)
@@ -620,11 +620,11 @@ switch iStep
                             ssit.parest.ellipse(muPRIOR([j,i]),icdf('chi2',0.9,2)*covPRIOR([j,i],[j,i]),'c-','linewidth',3)
                             plot(log10MLEPars(j),log10MLEPars(i),'kx','MarkerSize',8)
 
-                            if vars.mleScatterPlots
-                                figure(3+(iPDO-1)*3)
-                                subplot(size(smplDone,2)-1,size(smplDone,2)-1,(i-1)*(size(smplDone,2)-1)+j-1)
-                                plot(exp(smplDone(:,j)),exp(smplDone(:,i)),'ro')
-                            end
+%                             if vars.mleScatterPlots
+%                                 figure(3+(iPDO-1)*3)
+%                                 subplot(size(smplDone,2)-1,size(smplDone,2)-1,(i-1)*(size(smplDone,2)-1)+j-1)
+%                                 plot(exp(smplDone(:,j)),exp(smplDone(:,i)),'ro')
+%                             end
 
                         end
                     end
